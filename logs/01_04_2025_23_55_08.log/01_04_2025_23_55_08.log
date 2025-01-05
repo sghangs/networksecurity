@@ -1,0 +1,31 @@
+[ 2025-01-04 23:55:14,121 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-01-04 23:55:14,140 ] 107 dagshub - INFO - Accessing as sghangs
+[ 2025-01-04 23:55:14,615 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sghangs/networksecurity "HTTP/1.1 200 OK"
+[ 2025-01-04 23:55:15,029 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-01-04 23:55:15,029 ] 107 dagshub - INFO - Initialized MLflow to track repo "sghangs/networksecurity"
+[ 2025-01-04 23:55:15,029 ] 107 dagshub - INFO - Repository sghangs/networksecurity initialized!
+[ 2025-01-04 23:55:15,036 ] 20 root - INFO - Initiate the data ingestion
+[ 2025-01-04 23:55:16,520 ] 63 root - INFO - Performed train test split on the dataframe
+[ 2025-01-04 23:55:16,520 ] 64 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-01-04 23:55:16,520 ] 68 root - INFO - Exporting train and test file
+[ 2025-01-04 23:55:16,615 ] 75 root - INFO - Exported train and test file
+[ 2025-01-04 23:55:16,616 ] 22 root - INFO - Data initiation completed
+[ 2025-01-04 23:55:16,630 ] 29 root - INFO - INitiate data validation
+[ 2025-01-04 23:55:16,668 ] 31 root - INFO - Required number of columns :2
+[ 2025-01-04 23:55:16,669 ] 32 root - INFO - Dataframe has columns : 31
+[ 2025-01-04 23:55:16,669 ] 31 root - INFO - Required number of columns :2
+[ 2025-01-04 23:55:16,669 ] 32 root - INFO - Dataframe has columns : 31
+[ 2025-01-04 23:55:16,895 ] 31 root - INFO - data validation completed
+[ 2025-01-04 23:55:16,895 ] 37 root - INFO - INitiate data Transformation
+[ 2025-01-04 23:55:16,895 ] 46 root - INFO - Entered the initiate data transformation method
+[ 2025-01-04 23:55:16,895 ] 48 root - INFO - Starting Data Transformation
+[ 2025-01-04 23:55:16,929 ] 36 root - INFO - Entered get_data_transformer_object method of Transformation class
+[ 2025-01-04 23:55:16,929 ] 39 root - INFO - INitialize KNN IMputer with : {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-01-04 23:55:16,966 ] 43 root - INFO - Entered the save object method of Mainutils class
+[ 2025-01-04 23:55:16,970 ] 43 root - INFO - Entered the save object method of Mainutils class
+[ 2025-01-04 23:55:16,974 ] 39 root - INFO - data transformation completed
+[ 2025-01-04 23:55:16,974 ] 43 root - INFO - Model training started...
+[ 2025-01-05 00:00:53,466 ] 43 root - INFO - Entered the save object method of Mainutils class
+[ 2025-01-05 00:00:53,504 ] 43 root - INFO - Entered the save object method of Mainutils class
+[ 2025-01-05 00:00:53,539 ] 127 root - INFO - Model trainer artifact:ModelTrainerArtifact(trained_model_file_path='Artifacts\\01_04_2025_23_55_09\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9909145972138098, precision_score=0.9873264936632469, recall_score=0.9945288753799392), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9788617886178862, precision_score=0.9725363489499192, recall_score=0.9852700490998363))
+[ 2025-01-05 00:00:53,543 ] 47 root - INFO - Model Training completed
